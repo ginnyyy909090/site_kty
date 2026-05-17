@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo"><img class="img__logo" src="imagers/img__logo.png" alt=""></a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="aboutus.html" class="menu__list-link">О нас</a></li>
+                        <li><a href="services.html" class="menu__list-link">Услуги</a></li>
+                        <li><a href="aboutus.html" class="menu__list-link">Команда</a></li>
+                        <li><a href="contact.html" class="menu__list-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="contact-hero">
+    <div class="container">
+        <h1>Свяжитесь с нами</h1>
+        <p>Заполните форму — мы перезвоним в течение 15 минут</p>
+    </div>
+        </section>
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2> Контактная информация</h2>
+                <p><strong>📍 Адрес:</strong> г. Нижний Новгород, ул. Большая Покровская, д. 10</p>
+                <p><strong>📞 Телефон:</strong> +7 (831) 000-00-00</p>
+                <p><strong>✉️ Email:</strong> info@yourlawyer.ru</p>
+            </div>
+            <div class="contact-form">
+                <h2>Написать нам</h2>
+                <form id="callback-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="topic">Тема обращения</label>
+                        <select id="topic">
+                            <option value="consult">Запись на консультацию</option>
+                            <option value="question">Вопрос по делу</option>
+                            <option value="coop">Сотрудничество</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Отправить заявку</button>
+                    <div id="form-status" class="status-msg"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </main>
+</div>
+<!--<script src="site.js" defer></script>-->
+</body>
+</html>
